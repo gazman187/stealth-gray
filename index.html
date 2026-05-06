@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>HA Insights</title>
+
+<link rel="redirect_uri" href="ha-insights://auth-callback">
+
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #021b52 0%, #003fb8 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 28px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+h1 {
+    font-size: 64px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-size: 26px;
+    opacity: 0.92;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.screenshots {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.screenshots img {
+    width: 180px;
+    max-width: 28vw;
+    border-radius: 34px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+}
+
+.screenshots img:hover {
+    transform: translateY(-8px);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.card p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.footer {
+    text-align: center;
+    opacity: 0.75;
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+
+a {
+    color: white;
+}
+
+@media (max-width: 900px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .screenshots {
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .screenshots img {
+        width: 150px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <img class="logo"
+        src="https://raw.githubusercontent.com/gazman187/ha-insights/main/icon.png">
+
+        <h1>HA Insights</h1>
+
+        <div class="subtitle">
+            Understand why your Home Assistant automations ran, failed, or were blocked.
+        </div>
+
+        <div class="screenshots">
+
+            <img src="https://raw.githubusercontent.com/gazman187/ha-insights/main/screenshot1.png">
+
+            <img src="https://raw.githubusercontent.com/gazman187/ha-insights/main/screenshot2.png">
+
+            <img src="https://raw.githubusercontent.com/gazman187/ha-insights/main/screenshot3.png">
+
+        </div>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Automation Analysis</h2>
+            <p>
+                View detailed automation traces and understand exactly what happened during every automation run.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Suggested Fixes</h2>
+            <p>
+                Quickly identify failed conditions, skipped branches, and actionable recommendations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Private & Secure</h2>
+            <p>
+                All automation data remains within your own Home Assistant environment.
+                No automation data is collected or stored externally.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="cards" style="margin-top:24px;">
+
+        <div class="card">
+            <h2>Support</h2>
+            <p>
+                Contact:<br><br>
+                hello@stealth-gray.com
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Privacy Policy</h2>
+            <p>
+                HA Insights does not collect, share, or sell personal information.
+                Authentication occurs directly with the user's Home Assistant instance.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 HA Insights
+    </div>
+
+</div>
+
+</body>
+</html>
